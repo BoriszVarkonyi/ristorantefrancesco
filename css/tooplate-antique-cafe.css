@@ -4,10 +4,10 @@
     --c-white: #FEFEFE;
     --c-gray: #9A8F8F;
     --c-vanilla: #FEF0B6;
+    --c-vanilla-transparent: rgba(254, 240, 182, 0.5);
     --c-brown: #BEB199;
     --c-red: #BC4A3C;
 }
-
 
 @font-face {
     @font-face {
@@ -48,10 +48,64 @@ p a:hover {
 }
 
 .parallax-mirror {
-    mix-blend-mode: luminosity;
+    filter: contrast(0.6) brightness(0.7);
+}
+
+#intro {
+    display: flex;
+    align-items: center;
+}
+
+#start-container {
+    margin: 5rem auto;
+    max-width: 1200px;
+    padding: 0 2rem;
+}
+
+#page-title {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.page-detail {
+    font-size: 1.6rem;
+    max-width: 60ch;
+    margin: 0.5rem 0;
+}
+
+.page-detail.bold {
+    font-weight: 700;
+}
+
+.menu-item-title {
+    font-style: italic;
+    font-size: 1.8rem;
+    margin: 1rem 0 1.5rem 1rem;
+    border-bottom: 1px solid var(--c-white);
+}
+
+.tm-menu-item {
+    margin-bottom: 0.5rem !important;
+    width: 100%;
+}
+
+.tm-menu-item > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.tm-menu-item > div div {
+    font-weight: 700;
+}
+
+.tm-menu-item h3 {
+    margin: 0 !important;
 }
 
 #about p a { color: #fefefe; }
+
 #about p a:hover { color: #fafafa; }
 
 #contact p a { color: #fefefe; }
@@ -67,6 +121,10 @@ footer span a { color: #fafafa; }
 .tm-container {
     max-width: 1200px;
     transition: all .3s ease-in;
+}
+
+.tm-item-container {
+    background-color: var(--c-vanilla-transparent) !important;
 }
 
 .parallax-window {
@@ -86,16 +144,18 @@ footer span a { color: #fafafa; }
     color: #ffffff;
 }
 
-.bg-white{
-    background-color: rgb(172, 155, 155, 0.7);
-}
-
 .tm-text-green {
     color: #ac9b9b;
 }
 
 .bg-black {
     background-color: var(--c-gray);
+}
+
+.bg-white {
+    background-color: var(--c-vanilla);
+    font-weight: 700;
+    color: var(--c-black);
 }
 
 a.tm-bg-green:hover {
