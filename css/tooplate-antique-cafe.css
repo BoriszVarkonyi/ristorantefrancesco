@@ -1,23 +1,54 @@
-/*
+:root {
+    --c-black: rgb(14, 14, 14);
+    --c-black-transparent: rgba(14, 14, 14, 0.2);
+    --c-white: #FEFEFE;
+    --c-gray: #9A8F8F;
+    --c-vanilla: #FEF0B6;
+    --c-brown: #BEB199;
+    --c-red: #BC4A3C;
+}
 
-Tooplate 2126 Antique Cafe
 
-https://www.tooplate.com/view/2126-antique-cafe
+@font-face {
+    @font-face {
+        font-family: "LibreBaskerville-Bold";
+        src: url("../fonts/LibreBaskerville-Bold.ttf"),
+      }
+}
 
-*/
+@font-face {
+    @font-face {
+        font-family: "LibreBaskerville-Italic";
+        src: url("../fonts/LibreBaskerville-Italic.ttf"),
+      }
+}
+
+@font-face {
+    @font-face {
+        font-family: "LibreBaskerville-Regular";
+        src: url("../fonts/LibreBaskerville-Regular.ttf"),
+      }
+}
 
 
 body {
-    font-family: 'Bankgothic MD', sans-serif;
-    background-color: #ac9b9b;
+    font-family: 'LibreBaskerville-Regular' !important;
+    background-color: var(--c-brown);
+    line-height: 1.2;
+    color: var(--c-white);
 }
 
 p a {
 	color: #fefefe;
+    font-family: 'LibreBaskerville-Regular' !important;
 }
 
 p a:hover {
 	color: #fafafa;
+}
+
+.parallax-mirror {
+    mix-blend-mode: luminosity;
 }
 
 #about p a { color: #fefefe; }
@@ -28,11 +59,14 @@ p a:hover {
 footer span a { color: #fafafa; }
 
 .tm-logo-font {
-    font-family: 'Bankgothic MD', sans-serif;
+    font-family: 'LibreBaskerville-Bold';
+    font-weight: 700;
+    line-height: 1;
 }
 
 .tm-container {
     max-width: 1200px;
+    transition: all .3s ease-in;
 }
 
 .parallax-window {
@@ -61,7 +95,7 @@ footer span a { color: #fafafa; }
 }
 
 .bg-black {
-    background-color: rgb(172, 155, 155, 0.7);
+    background-color: var(--c-gray);
 }
 
 a.tm-bg-green:hover {
@@ -99,12 +133,12 @@ textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: rgb(214, 212, 212);
     opacity: 1; /* Firefox */
 }
-  
+
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: rgb(214, 212, 212);
 }
-  
+
 input::-ms-input-placeholder,
 textarea::-ms-input-placeholder { /* Microsoft Edge */
     color: rgb(214, 212, 212);
@@ -113,10 +147,11 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
 #tm-nav {
     z-index: 1000;
     transition: all 0.3s ease;
+    background: var(--c-black-transparent);
 }
 
 #tm-nav.scroll {
-    background-color: rgb(172, 155, 155, 0.7);
+    background-color: var(--c-black);
 }
 
 #tm-nav li a {
@@ -131,7 +166,7 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
 
 .tm-text-2xl {
     font-size: 1.2rem;
-    line-height: 2rem;
+    line-height: 1.5rem;
 }
 
 @media (min-width: 768px) {
