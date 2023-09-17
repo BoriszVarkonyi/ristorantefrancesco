@@ -2,6 +2,7 @@
     --c-black: rgb(14, 14, 14);
     --c-black-transparent: rgba(14, 14, 14, 0.2);
     --c-white: #FEFEFE;
+    --c-white-transparent: rgba(254, 254, 254, 0.2);
     --c-gray: #9A8F8F;
     --c-vanilla: #FEF0B6;
     --c-vanilla-transparent: rgba(254, 240, 182, 0.5);
@@ -60,6 +61,11 @@ p a:hover {
     margin: 5rem auto;
     max-width: 1200px;
     padding: 0 2rem;
+    border: 1pt solid var(--c-white-transparent);
+    background-color: var(--c-white-transparent);
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: max-content;
 }
 
 #page-title {
