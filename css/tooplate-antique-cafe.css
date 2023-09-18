@@ -57,6 +57,15 @@ p a:hover {
     align-items: center;
 }
 
+.menu-toggle {
+    box-sizing: border-box;
+}
+
+.menu-toggle img {
+    width: 2rem;
+    height: 2rem;
+}
+
 #start-container {
     margin: 5rem auto;
     max-width: 1200px;
@@ -65,17 +74,16 @@ p a:hover {
     background-color: var(--c-white-transparent);
     border-radius: 0.5rem;
     box-sizing: border-box;
-    width: max-content;
 }
 
 #page-title {
-    font-size: 5rem;
+    font-size: var(--t-page-title-size);
     font-weight: 700;
 }
 
 .page-detail {
     font-size: 1.6rem;
-    max-width: 60ch;
+    max-width: 40ch;
     margin: 0.5rem 0;
 }
 

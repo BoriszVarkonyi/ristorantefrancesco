@@ -1045,6 +1045,7 @@ video {
   --tw-ring-color: rgba(59, 130, 246, 0.5);
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
+  --t-page-title-size: 4rem;
 }
 
 .transition {
@@ -1056,6 +1057,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  * {
+    --t-page-title-size: 3rem;
+  }
+
   .sm\:mr-12 {
     margin-right: 3rem;
   }
@@ -1112,6 +1117,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  * {
+    --t-page-title-size: 4rem;
+  }
+
   .md\:mt-0 {
     margin-top: 0px;
   }
@@ -1140,6 +1149,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  * {
+    --t-page-title-size: 5rem;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
