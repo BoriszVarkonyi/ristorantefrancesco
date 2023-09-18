@@ -8,6 +8,7 @@
     --c-vanilla-transparent: rgba(254, 240, 182, 0.5);
     --c-brown: #BEB199;
     --c-red: #BC4A3C;
+    --c-red-dark: #923b30;
 }
 
 @font-face {
@@ -17,35 +18,49 @@
       }
 }
 
-@font-face {
-    @font-face {
-        font-family: "LibreBaskerville-Italic";
-        src: url("../fonts/LibreBaskerville-Italic.ttf"),
-      }
-}
-
-@font-face {
-    @font-face {
-        font-family: "LibreBaskerville-Regular";
-        src: url("../fonts/LibreBaskerville-Regular.ttf"),
-      }
-}
-
-
 body {
-    font-family: 'LibreBaskerville-Regular' !important;
+    font-family: "LibreBaskerville-Regular", serif !important;
     background-color: var(--c-brown);
     line-height: 1.2;
     color: var(--c-white);
 }
 
-p a {
-	color: #fefefe;
-    font-family: 'LibreBaskerville-Regular' !important;
+a {
+    cursor: pointer;
 }
 
-p a:hover {
-	color: #fafafa;
+p a, p span {
+    display: inline !important;
+	color: var(--c-red) !important;
+    font-style: italic;
+}
+
+p a:hover, span:hover {
+	color: var(--c-red-dark) !important;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.contact span {
+    margin-left: 1ch;
+}
+
+.contact img {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+
+h2 {
+    font-weight: 700;
+}
+
+.personnel {
+    border-bottom: 1pt solid var(--c-black);
+    font-weight: 700;
 }
 
 .parallax-mirror {
