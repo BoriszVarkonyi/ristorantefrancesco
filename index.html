@@ -2,348 +2,259 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ristorante Francesco</title>
-    <link rel="stylesheet" href="css/tailwind.css">
-    <link rel="stylesheet" href="css/tooplate-antique-cafe.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/mainstyle.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>Document</title>
 </head>
 <body>
-    <!-- Intro -->
-    <div id="intro" class="parallax-window" data-parallax="scroll" data-image-src="./img/bg-01.png">
-        <nav id="tm-nav" class="fixed w-full">
-            <div class="tm-container mx-auto px-2 md:py-6 text-right">
-                <button class="md:hidden py-2 px-2 menu-toggle" id="menu-toggle"><img src="./img/menu_white_24dp.svg" alt="Menu Icon"></button>
-                <ul class="mb-3 md:mb-0 text-2xl font-normal flex justify-end flex-col md:flex-row">
-                    <li class="inline-block mb-4 mx-4"><a href="#intro" class="tm-text-gold py-1 md:py-3 px-4">Startpagina</a></li>
-                    <li class="inline-block mb-4 mx-4"><a href="#menu" class="tm-text-gold py-1 md:py-3 px-4">Menu</a></li>
-                    <li class="inline-block mb-4 mx-4"><a href="#about" class="tm-text-gold py-1 md:py-3 px-4">Over Ons</a></li>
-                    <li class="inline-block mb-4 mx-4"><a href="#contact" class="tm-text-gold py-1 md:py-3 px-4">Reserveer nu online</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div id="start-container">
-            <h1 id="page-title">Francesco</h1>
-            <p class="page-detail">Op zoek naar huisbereide pasta, verse, smaalvolle gerechten met een originele twist én lekkere wijn, rechtstreeks geimporteerd uit Italië?</p>
-            <p class="page-detail bold">Welkom bij Francesco!</p>
-            <p class="page-detail">Een gezellig Italiaans restaurant met mooi ingericht terras en ruime parkeermogelijkheden.
-                Het interieur van de zaak werd begin september ’23 helemaal vernieuwd.</p>
-        </div>
-    </div>
-    <div id="menu" class="parallax-window" data-parallax="scroll" data-image-src="./img/bg-02.png">
-        <div class="container mx-auto tm-container py-24 sm:py-48">
-            <div class="text-center mb-16">
-                <h2 class="bg-white tm-text-brown py-6 px-12 text-4xl inline-block rounded-md">Menu</h2>
-            </div>
-            <div class="flex flex-col lg:flex-row justify-around">
-                <div class="flex-1 m-5 rounded-xl px-4 py-6 sm:px-8 sm:py-10 tm-bg-brown tm-item-container">
-                    <h3 class="menu-item-title">Antipasti</h3>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Bruschetta Classic</h3>
-                            <div>€12</div>
-                        </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Bruschetta Vijgen, Parma, Geitenkaas</h3>
-                            <div>€16</div>
-                        </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Vitello Tonnato</h3>
-                            <div>€16</div>
-                        </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Zalmtartaar</h3>
-                            <div>€16.5</div>
-                        </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Carpaccio Van Zalm</h3>
-                            <div>€16.5</div>
-                        </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Rundscarpaccio Met Ruccola Parmezaan</h3>
-                            <div>€18.5</div>
-                        </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Lauwe Salade Van Octopus</h3>
-                            <div>€19.5</div>
-                        </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Bruschetta Krab</h3>
-                            <div>€19.5</div>
-                        </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Antipasto Italiano 2p</h3>
-                            <div>€31.5</div>
-                        </div>
-                    </div>
-                    <h3 class="menu-item-title">Pasta</h3>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Tagliatelle Ragu</h3>
-                            <div>€15.5</div>
-                        </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Lasagna Von De Chef</h3>
-                            <div>€17.5</div>
-                        </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Ravioli Ricotta En Spinazie</h3>
-                            <div>€18.5</div>
-                        </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Spaghetti Alla Puttanesca</h3>
-                            <div>€16.5</div>
-                        </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Tagliatelle Zalm Met Zalmcaviaar</h3>
-                            <div>€20.5</div>
-                        </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Lasagna Calamari En Scampi</h3>
-                            <div>€21.5</div>
-                        </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Linguini Vongole</h3>
-                            <div>€25</div>
-                        </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Ravioli St Jacobs En Scampi</h3>
-                            <div>€26.5</div>
-                        </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Spaghetti Frutti Di Mare</h3>
-                            <div>€27.5</div>
-                        </div>
-                    </div>
-                    <h3 class="menu-item-title">Vlees</h3>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Saltimbocca Alla Romana</h3>
-                            <div>€26.5</div>
-                        </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Kalfslapjes Met Citroensaus</h3>
-                            <div>€26.5</div>
-                        </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Tagliata Ruccola Parmezaan</h3>
-                            <div>€28.5</div>
-                        </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Lamsfilet Met Groentjes</h3>
-                            <div>€28.5</div>
-                        </div>
-                    </div>
+    <nav>
+        <div id="navigation-desktop">
+            <div>
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="Ristorante Francesco Logo">
                 </div>
-                <div class="flex-1 m-5 rounded-xl px-4 py-6 sm:px-8 sm:py-10 tm-bg-brown tm-item-container">
-                    <h3 class="menu-item-title">Vis</h3>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Heilbot Met Zwarte Rijst</h3>
-                            <div>€23.5</div>
+                <a href="#start">Startpaginen</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">Over ons</a>
+                <a href="#gallery">Fotogalrij</a>
+                <a href="#reserve">Reserveer nu online</a>
+            </div>
+        </div>
+        <div id="navigation-mobile">mobile</div>
+    </nav>
+    <main>
+        <div id="start" class="parallax-window" data-parallax="scroll" data-image-src="./img/bg-01.png">
+            <div class="section">
+                <div>
+                    <h1>Francesco</h1>
+                    <p class="page-detail">Op zoek naar huisbereide pasta, verse, smaalvolle gerechten met een originele twist én lekkere wijn, rechtstreeks geimporteerd uit <span class="italy-text">Italië</span>?</p>
+                    <p class="page-detail bold">Welkom bij Francesco!</p>
+                    <p class="page-detail">Een gezellig Italiaans restaurant met mooi ingericht terras en ruime parkeermogelijkheden.
+                        Het interieur van de zaak werd begin september ’23 helemaal vernieuwd.</p>
+                </div>
+            </div>
+        </div>
+        <div id="menu" class="parallax-window" data-parallax="scroll" data-image-src="./img/bg-02.png">
+            <div class="section">
+                <h2>&#183; Menu &#183;</h2>
+                <div id="menu-wrapper">
+                    <div class="menu-column">
+                        <h3>Antipasti</h3>
+                        <div>
+                            <h4>Bruschetta Classic</h4>
+                            <p>€12</p>
+                        </div>
+                        <div>
+                            <h4>Bruschetta Vijgen, Parma, Geitenkaas</h4>
+                            <p>€16</p>
+                        </div>
+                        <div>
+                            <h4>Vitello Tonnato</h4>
+                            <p>€16</p>
+                        </div>
+                        <div>
+                            <h4>Zalmtartaar</h4>
+                            <p>€16.5</p>
+                        </div>
+                        <div>
+                            <h4>Carpaccio Van Zalm</h4>
+                            <p>€16.5</p>
+                        </div>
+                        <div>
+                            <h4>Rundscarpaccio Met Ruccola Parmezaan</h4>
+                            <p>€18.5</p>
+                        </div>
+                        <div>
+                            <h4>Lauwe Salade Van Octopus</h4>
+                            <p>€19.5</p>
+                        </div>
+                        <div>
+                            <h4>Bruschetta Krab</h4>
+                            <p>€19.5</p>
+                        </div>
+                        <div>
+                            <h4>Bruschetta Krab</h4>
+                            <p>€19.5</p>
+                        </div>
+                        <div>
+                            <h4>Antipasto Italiano 2p</h4>
+                            <p>€19.5</p>
+                        </div>
+                        <h3>Pasta</h3>
+                        <div>
+                            <h4>Tagliatelle Ragu</h4>
+                            <p>€15.5</p>
+                        </div>
+                        <div>
+                            <h4>Lasagna Von De Chef</h4>
+                            <p>€17.5</p>
+                        </div>
+                        <div>
+                            <h4>Ravioli Ricotta En Spinazie</h4>
+                            <p>€18.5</p>
+                        </div>
+                        <div>
+                            <h4>Spaghetti Alla Puttanesca</h4>
+                            <p>€16.5</p>
+                        </div>
+                        <div>
+                            <h4>Tagliatelle Zalm Met Zalmcaviaar</h4>
+                            <p>€20.5</p>
+                        </div>
+                        <div>
+                            <h4>Lasagna Calamari En Scampi</h4>
+                            <p>€21.5</p>
+                        </div>
+                        <div>
+                            <h4>Linguini Vongole</h4>
+                            <p>€25</p>
+                        </div>
+                        <div>
+                            <h4>Ravioli St Jacobs En Scampi</h4>
+                            <p>€26.5</p>
+                        </div>
+                        <div>
+                            <h4>Spaghetti Frutti Di Mare</h4>
+                            <p>€27.5</p>
+                        </div>
+                        <h3>Vlees</h3>
+                        <div>
+                            <h4>Saltimbocca Alla Romana</h4>
+                            <p>€26.5</p>
+                        </div>
+                        <div>
+                            <h4>Kalfslapjes Met Citroensaus</h4>
+                            <p>€26.5</p>
+                        </div>
+                        <div>
+                            <h4>Tagliata Ruccola Parmezaan</h4>
+                            <p>€28.5</p>
+                        </div>
+                        <div>
+                            <h4>Lamsfilet Met Groentjes</h4>
+                            <p>€28.5</p>
                         </div>
                     </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Gebakken Zalm</h3>
-                            <div>€23.5</div>
+                    <div class="menu-column">
+                        <h3>Vis</h3>
+                        <div>
+                            <h4>Heilbot Met Zwarte Rijst</h4>
+                            <p>€23.5</p>
                         </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Gegrilde Octopus</h3>
-                            <div>€26.5</div>
+                        <div>
+                            <h4>Gebakken Zalm</h4>
+                            <p>€23.5</p>
                         </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Gambas Naar Keuze</h3>
-                            <div>€31.5</div>
+                        <div>
+                            <h4>Gegrilde Octopus</h4>
+                            <p>€26.5</p>
                         </div>
-                    </div>
-                    <h3 class="menu-item-title">Dolci</h3>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Tiramisu</h3>
-                            <div>€8.5</div>
+                        <div>
+                            <h4>Gambas Naar Keuze</h4>
+                            <p>€31.5</p>
                         </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Créme Brulée</h3>
-                            <div>€8.5</div>
+                        <h3>Dolci</h3>
+                        <div>
+                            <h4>Tiramisu</h4>
+                            <p>€8.5</p>
                         </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Panna Cotta</h3>
-                            <div>€8.5</div>
+                        <div>
+                            <h4>Créme Brulée</h4>
+                            <p>€8.5</p>
                         </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Sorbetto Al Limone (Citroensorbet)</h3>
-                            <div>€8</div>
+                        <div>
+                            <h4>Panna Cotta</h4>
+                            <p>€8.5</p>
                         </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Sorbetto Al Limone Con Limoncello (Citroensorbet&Limoncello)</h3>
-                            <div>€13</div>
+                        <div>
+                            <h4>Sorbetto Al Limone (Citroensorbet)</h4>
+                            <p>€8</p>
                         </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Gelato Alla Vaniglia (Vanilla Ijs)</h3>
-                            <div>€7</div>
+                        <div>
+                            <h4>Sorbetto Al Limone Con Limoncello (Citroensorbet&Limoncello)</h4>
+                            <p>€13</p>
                         </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Gelato Al Caffé (Mokka Ijs)</h3>
-                            <div>€7</div>
+                        <div>
+                            <h4>Gelato Alla Vaniglia (Vanilla Ijs)</h4>
+                            <p>€7</p>
                         </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Gelato Alla Cioccolato (Chocolade Ijs)</h3>
-                            <div>€7</div>
+                        <div>
+                            <h4>Gelato Al Caffé (Mokka Ijs)</h4>
+                            <p>€7</p>
                         </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Gelato Alla Vaniglia Con Frutta Rossa (Vanilla Ijs Met Rood Fruit)</h3>
-                            <div>€12</div>
+                        <div>
+                            <h4>Gelato Alla Cioccolato (Chocolade Ijs)</h4>
+                            <p>€7</p>
                         </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Dame Blanche</h3>
-                            <div>€8</div>
+                        <div>
+                            <h4>Gelato Alla Vaniglia Con Frutta Rossa (Vanilla Ijs Met Rood Fruit)</h4>
+                            <p>€12</p>
                         </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Coupe Brésilienne</h3>
-                            <div>€8</div>
+                        <div>
+                            <h4>Dame Blanche</h4>
+                            <p>€8</p>
                         </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Tartuffo Biano O Néro (Tartuffo Ijs Wit Of Zwart</h3>
-                            <div>€7</div>
+                        <div>
+                            <h4>Coupe Brésilienne</h4>
+                            <p>€8</p>
                         </div>
-                    </div>
-                    <div class="flex items-start mb-6 tm-menu-item">
-                        <div class="ml-3 sm:ml-6">
-                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Limone Ripieno (Gevulde Citroen Met Ijs)</h3>
-                            <div>€7</div>
+                        <div>
+                            <h4>Tartuffo Biano O Néro (Tartuffo Ijs Wit Of Zwart)</h4>
+                            <p>€7</p>
+                        </div>
+                        <div>
+                            <h4>Limone Ripieno (Gevulde Citroen Met Ijs)</h4>
+                            <p>€7</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div id="about" class="parallax-window" data-parallax="scroll" data-image-src="./img/bg-03.png">
-        <div class="container mx-auto tm-container py-24 sm:py-48">
-            <div class="tm-item-container sm:ml-auto sm:mr-12 mx-auto sm:px-0 px-4">
-                <div class="bg-white bg-opacity-80 p-12 pb-14 rounded-xl mb-5">
-                    <h2 class="mb-6 text-4xl">Over Ons</h2>
-                    <p class="text-base leading-8 personnel">CHEF ARTUR</p>
-                    <p class="mb-6 text-base leading-8">Onze nieuwe aanwinst! Hij is een gepassioneerde Chef uit Oekraïne, heeft de Italiaanse keuken geleerd in Moskou, bij Chef Luigi Magni, in restaurant Pinch. Geeft de gerechten een persoonlijke touch.</p>
-                    <p class="text-base leading-8 personnel">FRANCESCO</p>
-                    <p class="mb-6 text-base leading-8">Italiaan in hart en nieren, ontvangt jullie met enthousiasme en professionaliteit. Is de zaak begonnen op het Antwerpse Zuid en kwam 10 jaar geleden naar Kapellen.</p>
-                    <p class="text-base leading-8 personnel">FRANCOISE</p>
-                    <p class="mb-10 text-base leading-8">Sinds kort bij team Francesco, buitte vroeger de succesvolle B&B Entre Amis uit in Boedapest. Heeft deze nieuwe uitdaging  gevonden dankzij haar passie voor de Italiaanse keuken.</p>
-                    <p class="leading-8">Adres: <span>Kapelsestraat 92, 2950 Kapellen, Belgium</span></p>
-                    <p class="leading-8">Telefoonnummer: <a href="tel:+32472260703">+32 472 26 07 03</a></p>
-                    <p class="leading-8 contact">Sociaal: <span><a><img src="./img/facebook_white_24dp.svg" alt="Facebook"></a></span></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--
-    <div id="contact" class="parallax-window relative" data-parallax="scroll" data-image-src="./img/bg-04.png">
-        <div class="container mx-auto tm-container pt-24 pb-48 sm:py-48">
-            <div class="flex flex-col lg:flex-row justify-around items-center lg:items-stretch">
-                <div class="flex-1 rounded-xl px-10 py-12 m-5 bg-white bg-opacity-80 tm-item-container">
-                    <h2 class="text-3xl mb-6 tm-text-green">Contact Us</h2>
-                    <p class="mb-6 text-lg leading-8">
-                        Praesent tellus magna, consectetur sit amet volutpat eu, pulvinar vitae sem.
-                        Sed ultrices. bg white 80% alpha. btn #066
-                    </p>
-                    <p class="mb-10 text-lg">
-                        <span class="block mb-2">Tel: <a href="tel:0100200340" class="hover:text-yellow-600 transition">010-020-0340</a></span>
-                        <span class="block">Email: <a href="mailto:info@company.com" class="hover:text-yellow-600 transition">info@company.com</a></span>
-                    </p>
-                    <div class="text-center">
-                        <a href="https://www.google.com/maps" class="inline-block text-white text-2xl pl-10 pr-12 py-6 rounded-lg transition tm-bg-green">
-                            <i class="fas fa-map-marked-alt mr-8"></i>
-                            Open Maps
-                        </a>
+        <div id="about" class="parallax-window" data-parallax="scroll" data-image-src="./img/bg-03.png">
+            <div class="section clear">
+                <div class="section-block">
+                    <h2>Over Ons</h2>
+                    <p class="personnel-text">CHEF ARTUR</p>
+                    <p>Onze nieuwe aanwinst! Hij is een gepassioneerde Chef uit Oekraïne, heeft de Italiaanse keuken geleerd in Moskou, bij Chef Luigi Magni, in restaurant Pinch. Geeft de gerechten een persoonlijke touch.</p>
+                    <p class="personnel-text">FRANCESCO</p>
+                    <p>Italiaan in hart en nieren, ontvangt jullie met enthousiasme en professionaliteit. Is de zaak begonnen op het Antwerpse Zuid en kwam 10 jaar geleden naar Kapellen.</p>
+                    <p class="personnel-text">FRANCOISE</p>
+                    <p>Sinds kort bij team Francesco, buitte vroeger de succesvolle B&B Entre Amis uit in Boedapest. Heeft deze nieuwe uitdaging  gevonden dankzij haar passie voor de Italiaanse keuken.</p>
+                    <div class="contact">
+                        <p>Adres: <span> Kapelsestraat 92, 2950 Kapellen, Belgium</span></p>
+                        <p>Telefoonnummer: <a href="tel:+32472260703">+32 472 26 07 03</a></p>
+                        <p>Sociaal: <span><a><img src="./img/facebook_white_24dp.svg" alt="Facebook"></a></span></p>
                     </div>
                 </div>
-                <div class="flex-1 rounded-xl p-12 pb-14 m-5 bg-black bg-opacity-50 tm-item-container">
-                    <form action="" method="POST" class="text-lg">
-                        <input type="text" name="name" class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold" placeholder="Name" required="" />
-                        <input type="email" name="email" class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold" placeholder="Email" required="" />
-                        <textarea rows="6" name="message" class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold" placeholder="Message..." required=""></textarea>
-                        <div class="text-right">
-                            <button type="submit" class="text-white hover:text-yellow-500 transition">Send it</button>
-                        </div>
-                      </form>
+            </div>
+        </div>
+        <div id="gallery" class="parallax-window" data-parallax="scroll" data-image-src="./img/bg-02.png">
+            <div class="section">
+                <h2>&#183; Fotogalrij &#183;</h2>
+                <div id="gallery-wrapper">
+                    <img src="./img/stock.jpg" alt="">
+                    <img src="./img/stock.jpg" alt="">
+                    <img src="./img/stock.jpg" alt="">
+                    <img src="./img/stock.jpg" alt="">
+                    <img src="./img/stock.jpg" alt="">
+                    <img src="./img/stock.jpg" alt="">
+                    <img src="./img/stock.jpg" alt="">
+                    <img src="./img/stock.jpg" alt="">
+                    <img src="./img/stock.jpg" alt="">
                 </div>
             </div>
-            <footer class="absolute bottom-0 left-0 w-full">
-                <div class="text-white container mx-auto tm-container p-8 text-lg flex flex-col md:flex-row justify-between">
-                    <span>Copyright 2022 Antique Cafe. All rights reserved.</span>
-                    <span class="mt-5 md:mt-0">Design: <a href="https://www.tooplate.com" target="_parent">Tooplate</a></span>
-                </div>
-            </footer>
         </div>
-    </div>
-    -->
-
+        <div id="reserve" class="parallax-window" data-parallax="scroll" data-image-src="./img/bg-01.png">
+            <div class="section">
+                <h2>&#183; Reserveer nu online &#183;</h2>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>footer</p>
+    </footer>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/jquery.singlePageNav.min.js"></script>
